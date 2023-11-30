@@ -1,0 +1,276 @@
+:root {
+  --yellow: #ffe430;
+  --yellow-hover: #f7d000;
+  --yellow-vanish: rgba(255, 228, 48, 0.8);
+  --yelow-disabled: rgba(255, 228, 48, 0.5);
+  --white: #ffffff;
+  --white-hover: #f7f7f7;
+  --white-vanish: rgba(255, 255, 255, 0.8);
+  --white-disabled: rgba(255, 255, 255, 0.5);
+  --black: #000;
+  --black-hover: #333;
+  --black-vanish: rgba(0, 0, 0, 0.8);
+  --black-disabled: rgba(0, 0, 0, 0.5);
+  --gray: #666;
+  --gray-hover: #999;
+  --gray-vanish: rgba(102, 102, 102, 0.8);
+  --gray-disabled: rgba(102, 102, 102, 0.5);
+}
+
+body {
+  padding-top: 80px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 50px;
+  left: 220px;
+  width: 220px;
+  margin-left: -220px;
+  border: none;
+  border-radius: 0;
+  overflow-y: auto;
+  background-color: #222;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+}
+
+#sidebar .nav.navbar-nav.side-bar {
+  gap: 1rem;
+}
+
+.side-bar > li > a {
+  color: #eee;
+  width: 220px;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.side-bar li a:hover,
+.side-bar li a:focus {
+  background-color: #333;
+}
+
+.tmargin {
+  margin-top: 15px;
+}
+
+.bd-links-link {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1rem;
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+
+/* Botones de acción */
+
+.btn-action {
+  text-transform: uppercase;
+  background-color: var(--yellow);
+  color: var(--black);
+  border: 1px solid var(--yellow);
+  border-radius: 0;
+  padding: 10px 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.btn-action:hover {
+  background-color: var(--yellow-hover);
+  color: var(--black);
+  border: 1px solid var(--yellow-hover);
+}
+
+.btn-action-lg {
+  padding: 5px 10px !important;
+  width: 100%;
+  text-align: center;
+}
+
+/* Disabled  */
+.btn-action:disabled {
+  cursor: not-allowed;
+  background-color: var(--yelow-disabled);
+  color: var(--black);
+  border: 1px solid var(--yelow-disabled);
+}
+
+/* -------------------------------------------------------------- */
+/* Manual purchase  */
+
+.ticket-wrap {
+  text-align: center;
+}
+
+.ticket {
+  display: inline-block;
+  margin: 0 auto;
+  border: 2px solid #9facbc;
+  font-family: "Variable Bahnschrift", "FF DIN", "Franklin Gothic",
+    "Helvetica Neue", sans-serif;
+  font-feature-settings: "kern" 1;
+  background: #fff;
+}
+
+.ticket__header {
+  margin: 0;
+  padding: 1.5em;
+  background: #f4f5f6;
+  justify-content: center;
+}
+
+.ticket__co span,
+.ticket__route span {
+  display: block;
+}
+
+.ticket__co {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  color: #5e7186;
+}
+
+.ticket__co-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  left: 0;
+  width: 4em;
+  height: auto;
+}
+
+.ticket__co-name {
+  font-size: 2.5em;
+  font-variation-settings: "wght" 500, "wdth" 75;
+  letter-spacing: -0.01em;
+}
+
+.ticket__co-subname {
+  font-variation-settings: "wght" 700;
+  color: #506072;
+}
+
+.ticket__body {
+  padding: 2rem 1.25em 1.25em;
+}
+
+.ticket__route {
+  font-variation-settings: "wght" 300;
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+.ticket__description {
+  margin-top: 0.5em;
+  font-variation-settings: "wght" 350;
+  font-size: 1.125em;
+  color: #506072;
+}
+
+.ticket__timing {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  border-top: 2px solid #9facbc;
+  border-bottom: 2px solid #9facbc;
+  text-align: left;
+}
+
+.ticket__timing p {
+  margin: 0 1rem 0 0;
+  padding-right: 1rem;
+  border-right: 2px solid #9facbc;
+  line-height: 1;
+}
+
+.ticket__timing p:last-child {
+  margin: 0;
+  padding: 0;
+  border-right: 0;
+}
+
+.ticket__small-label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-variation-settings: "wght" 300;
+  font-size: 0.875em;
+  color: #506072;
+}
+
+.ticket__detail {
+  font-variation-settings: "wght" 700;
+  font-size: 1.25em;
+  color: #424f5e;
+}
+
+.ticket__admit {
+  margin-top: 2rem;
+  font-size: 2.5em;
+  font-variation-settings: "wght" 700, "wdth" 85;
+  line-height: 1;
+  color: #657990;
+}
+
+.ticket__fine-print {
+  margin-top: 1rem;
+  font-variation-settings: "wdth" 75;
+  color: #666;
+}
+
+.ticket__barcode {
+  margin-top: 1.25em;
+  width: 299px;
+  max-width: 100%;
+}
+
+@media (min-width: 36em) {
+  .ticket-wrap {
+    margin-bottom: 4em;
+    text-align: center;
+  }
+
+  .ticket {
+    margin: 0 auto;
+    /* transform: rotate(6deg); */
+  }
+
+  .ticket__header {
+    margin: 0;
+    padding: 2em;
+  }
+
+  .ticket__body {
+    padding: 3rem 2em 2em;
+  }
+
+  .ticket__detail {
+    font-size: 1.75em;
+  }
+
+  .ticket__admit {
+    margin-top: 2rem;
+  }
+}
+
+@supports (display: grid) {
+  @media (min-width: 72em) {
+    .ticket-info,
+    .ticket-wrap {
+      align-self: center;
+    }
+
+    .ticket-wrap {
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    .ticket-info {
+      order: 1;
+    }
+  }
+}
