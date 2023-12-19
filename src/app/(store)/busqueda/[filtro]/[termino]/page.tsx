@@ -19,7 +19,7 @@ export default async function Search({ params }: Props) {
   });
 
   return (
-    <>
+    <div>
       <Banner
         banner_url="https://i.imgur.com/OdJws45.png"
         text=""
@@ -43,6 +43,6 @@ export default async function Search({ params }: Props) {
           )}
         </div>
       </section>
-    </>
+      </div>
   );
 }

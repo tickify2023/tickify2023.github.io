@@ -11,9 +11,13 @@ export const Faq = ({
   id: string;
 }) => {
   return (
-    <div className="accordion-item custom-accordion">
+    <div 
+    style={{backgroundColor: "black " ,color:"yellow "}}
+    className="accordion-item custom-accordion">
       <h3 className="accordion-header">
         <button
+          style={{ backgroundColor: 'black', color: 'yellow' }}
+          
           className="accordion-button collapsed"
           type="button"
           data-bs-toggle="collapse"

@@ -8,7 +8,9 @@ export default function Home() {
     <div className="row g-0 login-section">
       <Redirect></Redirect>
       <div className="col-lg-6">
-        <div className="card-body p-md-5 mx-md-4">
+        <div 
+        style={{backgroundColor:'black'}}
+        className="card-body p-md-5 mx-md-4">
           <LogoHeader></LogoHeader>
           <Form></Form>
         </div>

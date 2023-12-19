@@ -1,13 +1,12 @@
+import { colors } from "@mui/material";
 import React from "react";
-
 const Footer = () => {
   return (
-    <footer id="footer" className="mt-5">
-      <div className="container">
-        <hr />
-        <p></p>
-      </div>
+    <div>  
+    <footer style={{backgroundColor:'black'}}>
+      <p style={{color:'greenyellow'}}>© Terminos y condiciones</p>
     </footer>
+    </div>
   );
 };
 

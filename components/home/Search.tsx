@@ -1,7 +1,10 @@
 "use client";
+
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import React from "react";
+
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -23,8 +26,15 @@ const SearchBar = () => {
   };
 
   return (
+    <div 
+    style={{backgroundColor:'black'}}>
     <form onSubmit={handleSubmit} className="my-3 m-md-5">
-      <div className="input-group">
+      <div 
+      style={{backgroundColor: "black"}}
+      color= "yellow"
+      className="input-group">
+        
+      
         <div className="dropdown">
           <button
             className="btn btn-default dropdown-toggle"
@@ -37,7 +47,7 @@ const SearchBar = () => {
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li>
-              <a
+              <a 
                 className="dropdown-item"
                 href="#"
                 onClick={(e) => {
@@ -62,7 +72,7 @@ const SearchBar = () => {
             </li>
           </ul>
         </div>
-
+        
         <input
           type="hidden"
           name="search_param"
@@ -85,6 +95,7 @@ const SearchBar = () => {
         </span>
       </div>
     </form>
+    </div>
   );
 };
 

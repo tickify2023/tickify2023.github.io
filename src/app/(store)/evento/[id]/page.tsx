@@ -19,6 +19,7 @@ export default async function EventoShow({ params }: Props) {
         position="center"
       ></Banner>
       <div
+        style={{backgroundColor: 'black'}}
         className="container mt-5 mb-5 pt-md-5 pb-md-5 js-fee"
         data-fee={event.fee}
       >

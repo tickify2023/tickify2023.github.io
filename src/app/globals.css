@@ -5,9 +5,9 @@
   --yellow-hover: rgba(213, 232, 116, 1);
   --yellow-vanish: rgba(213, 232, 116, 0.8);
   --yelow-disabled: rgba(213, 232, 116, 0.5);
-  --white: #ffffff;
-  --white-hover: #f7f7f7;
-  --white-vanish: rgba(255, 255, 255, 0.8);
+  --white: #f9f7f7;
+  --white-hover: #faf8f8;
+  --white-vanish: rgba(250, 247, 247, 0.8);
   --white-disabled: rgba(255, 255, 255, 0.5);
   --black: #000;
   --black-hover: #333;
@@ -20,10 +20,16 @@
 }
 
 body {
+  background-color: #060606;
   font: normal 1em/1.65em "Roboto", Arial, sans-serif !important;
   color: var(--gray);
 }
-
+.container{
+  background-color: #000;
+}
+.banner{
+  background-color: #000;
+}
 .yellow {
   color: var(--yellow) !important;
 }
@@ -67,6 +73,7 @@ html {
   transform-origin: bottom left;
 }
 
+
 /* -------------------------------------------------------------- */
 
 /* Home page */
@@ -99,7 +106,7 @@ html {
 }
 
 .card h1 {
-  font-weight: 900;
+  font-weight: 300;
 }
 
 .card {
@@ -120,6 +127,7 @@ html {
   clear: both;
 }
 .card .menu-content li {
+  background-color: #000;
   display: inline-block;
 }
 .card .menu-content a {
@@ -257,6 +265,7 @@ html {
   font-weight: 700;
   color: var(--black);
 }
+
 
 /* --------------------------------------------------------------
 
@@ -407,6 +416,7 @@ html {
 }
 
 .bg-dot {
+  
   background-image: url("https://i.imgur.com/hTAexq8.jpg");
   background-position: inherit;
   background-size: contain;
@@ -416,8 +426,38 @@ html {
 
 /* Contacto */
 
+#contacto{
+  color: rgba(213, 232, 116, 1);  
+  background-color: #333;
+}
+#container{
+  background-color: #333;
+}
+.mt-5{
+  background-color: #333;
+}
+.pd-5{
+  background-color: #333;
+}
+.p-2 {
+  background-color: #333
+ 
+}
+
+.p-md-5 {
+  background-color: #333
+  
+}
+
+.bg-dot {
+  /* Aquí debes proporcionar los estilos específicos de tu clase bg-dot */
+  background: #333 /* Tu estilo de fondo */
+}
+
+
 #contacto h2:first-of-type {
-  font-size: 4rem;
+  background-color: #424f5e;
+  font-size: rem;
 }
 
 #contacto h2 {

@@ -1,4 +1,6 @@
 import Banner from "@/components/generic/Banner";
+import { Color } from "@mui/material";
+import { red } from "@mui/material/colors";
 const colorDeFondo: React.FC = () => {
   const colorDiv = {
     backgroundColor: '#00ff00', // Puedes cambiar el código de color aquí
@@ -13,17 +15,22 @@ const colorDeFondo: React.FC = () => {
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 export default function Contacto() {
   return (
-    <>
- 
+    <div style={{backgroundColor: 'black'}}>
+      <div style={{backgroundColor: 'black'}}>
       <Banner
         banner_url="https://i.imgur.com/t5A749p.jpg"
         text=""
         position="center"
       ></Banner>
-      <div className="container mt-5 pd-5" id="contacto">
+      </div>
+      <div  
+        style={{backgroundColor: 'black'}}
+      className="background-color container mt-5 pd-5" id="contacto">
         
       
-        <div className="p-2 p-md-5 bg-dot">
+        <div
+        style={{backgroundColor: 'black'}} 
+        className="p-2 p-md-5 bg-dot">
           <h2 className="hover-underline-animation"></h2>
           <br />
           <h2 className="hover-underline-animation"></h2>
@@ -44,12 +51,17 @@ export default function Contacto() {
         </div>
         <div className="row contacto-details">
           <div className="col-12 col-md-4 detail">
-            <img src="https://i.imgur.com/aEwXeHm.png"  />
+          <a target="blank"
+          href="https://www.facebook.com/people/Tickify-Arg/61554430005999/"> 
+          <img src="https://i.imgur.com/nFIsQ5Q.png" />
+          </a>
             <h3 className="hover-underline-animation"></h3>
             
           </div>
           <div className="col-12 col-md-4 detail">
-            <img src="https://i.imgur.com/AY5X0Iu.png"  />
+          <a target="blank">
+            <img src="https://i.imgur.com/62cNtzr.png" />
+          </a>
             <h3 className="hover-underline-animation"></h3>
             <a
               target="_blank"
@@ -62,7 +74,7 @@ export default function Contacto() {
           <div className="col-12 col-md-4 detail">
           <a target="blank"
           href="https://www.instagram.com/tickify.ar/">
-            <img src="https://i.imgur.com/CogsmUW.png" />
+            <img src="https://i.imgur.com/EVZuEiV.png" />
           </a>
             
             
@@ -79,6 +91,6 @@ export default function Contacto() {
         </div>
       </div>
     
-    </>
+      </div>
   );
 }

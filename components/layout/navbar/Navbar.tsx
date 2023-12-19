@@ -33,6 +33,7 @@ const Navbar = () => {
             <ul className="navbar-nav ">
               <li className="nav-item">
                 <Link
+                 
                   className="nav-link active hover-underline-animation"
                   aria-current="page"
                   href="/"

@@ -11,6 +11,7 @@ const WpBtn = () => {
         <div
           className="wp"
           style={{
+            
             backgroundImage: "url(/imgs/logos/wp.png)",
           }}
         ></div>

@@ -9,8 +9,13 @@ export default async function Home() {
   console.log(events);
 
   return (
-    <>
+    <div
+    style={{
+      backgroundColor: "black",
+    }}
+    >
       <MainBanner></MainBanner>
+      
 
       <section className="container mt-5 pd-5" id="sec-events">
         <h2 className="hover-underline-animation">Eventos</h2>
@@ -23,6 +28,6 @@ export default async function Home() {
           ))}
         </div>
       </section>
-    </>
+    </div>
   );
 }

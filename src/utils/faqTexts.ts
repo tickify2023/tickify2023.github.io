@@ -1,5 +1,6 @@
 import EventoShow from "src/app/(store)/evento/[id]/page";
 import { getEffectiveConstraintOfTypeParameter } from "typescript";
+import { Style } from "util";
 
 interface FaqText {
   id: number;
