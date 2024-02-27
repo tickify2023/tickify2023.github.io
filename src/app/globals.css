@@ -4,7 +4,7 @@
   --yellow: #d4eb2b;
   --yellow-hover: rgba(213, 232, 116, 1);
   --yellow-vanish: rgba(213, 232, 116, 0.8);
-  --yelow-disabled: rgba(213, 232, 116, 0.5);
+  --yellow-disabled: rgba(213, 232, 116, 0.5);
   --white: #f9f7f7;
   --white-hover: #faf8f8;
   --white-vanish: rgba(250, 247, 247, 0.8);
@@ -502,6 +502,7 @@ html {
 /* -------------------------------------------------------------- */
 /* Nosotros */
 #nosotros h2 {
+  text-align: center;
   font-size: 4rem;
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -719,6 +720,7 @@ html {
 }
 
 h2#second {
+  background-color: black;
   font-size: 3rem;
   font-family: "Playfair Display", serif;
   font-weight: 700;

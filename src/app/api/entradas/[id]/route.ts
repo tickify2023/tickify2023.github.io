@@ -8,7 +8,7 @@ export async function GET(
   try {
     //Update clienttickets with the given id : used to true
     const { rows: clientTickets } = await conn.query(
-      `UPDATE clienttickets SET used = true WHERE id = ${id} RETURNING *`
+      "UPDATE clienttickets SET used = true WHERE id = ${id} RETURNING *"
     );
     return NextResponse.json({ updated: true });
   } catch (error) {

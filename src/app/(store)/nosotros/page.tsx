@@ -17,6 +17,7 @@ export default function Nosotros() {
         <StoryTelling 
         style={{color:'rgba(213, 232, 116, 0.8)'}}
         position="center"
+        
         />
 
         <h2  style={{color: 'rgba(213, 232, 116, 0.8)'}}  

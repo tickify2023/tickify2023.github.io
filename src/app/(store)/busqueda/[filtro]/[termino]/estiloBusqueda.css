@@ -1,0 +1,32 @@
+h2{
+  padding: 20px;
+  text-shadow: 2px 2px 4px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+div{
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#sec-events {
+    background-color: #d4eb2b;
+    padding: 20px;
+    border-radius: 10px;
+    color: #d4eb2b;
+  }
+
+#container {
+     background-color: rgba(213, 232, 116, 1);;
+
+}
+
+#mt-5 {
+  background-color:black;
+  border-radius: 10px;
+}
+#mb-5{
+  background-color: black;
+  border-radius: 10px;
+}

@@ -2,9 +2,7 @@ import { Pool } from "pg";
 
 let conn: any;
  
-//Si la variable conn no está definida, se crea un nuevo objeto Pool 
-//con los parámetros de conexión especificados en 
-//las variables de entorno. 
+
 if (!conn) {
   conn = new Pool({
     user: process.env.PGSQL_USER,

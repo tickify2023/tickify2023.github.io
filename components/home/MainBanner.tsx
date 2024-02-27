@@ -10,7 +10,7 @@ export const MainBanner = () => {
          
         
         <div>
-          <h1>Eventos</h1>
+          <h1></h1>
           <h1 className="yellow">Exclusivos</h1>
           {/* <p>La Meseta</p> */}
 

@@ -5,8 +5,12 @@ import { text } from "stream/consumers";
 export const StoryTelling = () => {
   return (
     <div style={{ textAlign: "center", color: "yellow" }}>
-      <div className="row">
-        <div className="col-12 col-md-6">
+      <div 
+      style={{ textAlign: "center"}}
+      className="row">
+        <div 
+        style={{ textAlign: "center"}}
+        className="col-12 col-md-6">
           <p style={{textAlign: "center"}}>
             Bienvenidos a nuestra empresa Tickify especializada en la venta de
             entradas online para todo tipo de eventos. Desde eventos culturales,
